@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_layanan_hardware"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_tampilan_table"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TampilLayananHardwareActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/textViewJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabel Layanan Hardware"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp" />
+
+    <!-- ScrollView tabel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tabelLayananHardware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*"
+                android:layout_marginTop="8dp">
+
+                <!-- Header -->
+                <TableRow>
+                    <TextView style="@style/TableHeader" android:text="Fungsi" />
+                    <TextView style="@style/TableHeader" android:text="Pelapor" />
+                    <TextView style="@style/TableHeader" android:text="Tanggal" />
+                    <TextView style="@style/TableHeader" android:text="Software" />
+                    <TextView style="@style/TableHeader" android:text="Hardware" />
+                    <TextView style="@style/TableHeader" android:text="Aksi" />
+                </TableRow>
+
+                <!-- Baris data dari Kotlin -->
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- Tombol Tambah -->
+    <Button
+        android:id="@+id/btnTambahLayanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Layanan"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_200" />
+</LinearLayout>

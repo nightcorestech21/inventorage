@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="spinnerFilterFungsi" type="id" />
+    <item name="textViewJudul" type="id" />
+    <item name="layout_layanan_hardware" type="id" />
+    <item name="tabelLayananHardware" type="id" />
+    <item name="btnTambahLayanan" type="id" />
+</resources>

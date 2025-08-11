@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@mipmap/bg_tampilan_table"
+    tools:context=".TabelPrinterActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabel Data Printer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp" />
+
+    <!-- Scrollable Tabel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tabelPrinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*">
+
+                <TableRow>
+                    <TextView style="@style/TableHeader" android:text="Nama PJ" />
+                    <TextView style="@style/TableHeader" android:text="Jabatan" />
+                    <TextView style="@style/TableHeader" android:text="Merk" />
+                    <TextView style="@style/TableHeader" android:text="Serial Number" />
+                    <TextView style="@style/TableHeader" android:text="Keterangan" />
+                    <TextView style="@style/TableHeader" android:text="Kondisi" />
+                    <TextView style="@style/TableHeader" android:text="Aksi" />
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- Tombol Tambah Data -->
+    <Button
+        android:id="@+id/btnTambahPrinter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white" />
+</LinearLayout>

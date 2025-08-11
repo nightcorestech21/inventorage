@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple Inventory"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama PJ"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edNamaPJ"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jabatan"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edJabatan"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merk"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edMerk"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OS"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edOS"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial Number"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edSerial"
+            android:ems="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RAM"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <Spinner
+            android:id="@+id/spinRAM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kondisi"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+        <Spinner
+            android:id="@+id/spinnerKondisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:text="Add"
+            android:background="@color/cardview_light_background"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:text="Add"
+            android:background="@color/teal_700"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:id="@+id/tb1"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbrow1"
+                android:background="@android:color/holo_blue_light"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama PJ"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jabatan"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Merk"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OS"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Seri"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RAM"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kondisi"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

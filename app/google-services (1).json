@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "347794459398",
+    "firebase_url": "https://halostat-inventory-default-rtdb.firebaseio.com",
+    "project_id": "halostat-inventory",
+    "storage_bucket": "halostat-inventory.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347794459398:android:0aaf91cc66f5896f322c87",
+        "android_client_info": {
+          "package_name": "com.example.halostat_inventory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzMY8z502_dg01YK3o1R4Mha70QDWWDzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347794459398:android:714bdc21e46d6443322c87",
+        "android_client_info": {
+          "package_name": "com.example.invent_zeva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzMY8z502_dg01YK3o1R4Mha70QDWWDzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347794459398:android:cbbb1dc57425e47c322c87",
+        "android_client_info": {
+          "package_name": "com.example.inventory_zeva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzMY8z502_dg01YK3o1R4Mha70QDWWDzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.invent_zeva" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Invent_zeva"
+        tools:ignore="IntentFilterExportedReceiver" >
+        <activity
+            android:name=".EditLaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddLayananSoftwareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilterPerbaikanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilterSoftwareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilterHardwareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddLayananHardwareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LayananActivity"
+            android:exported="false" /> <!-- Fitur Layanan -->
+        <activity
+            android:name=".TampilLayananPerbaikanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TampilLayananSoftwareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TampilLayananHardwareActivity"
+            android:exported="false" /> <!-- Form Inventaris -->
+        <activity
+            android:name=".InventPCActivity"
+            android:exported="true" />
+        <activity
+            android:name=".InventLaptopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventUPSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventPrinterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventScannerActivity"
+            android:exported="false" /> <!-- Tabel Data -->
+        <activity
+            android:name=".TabelPCActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TabelLaptopActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TabelUPSActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TabelPrinterActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".TabelScannerActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" /> <!-- Edit Form -->
+        <activity
+            android:name=".EditPCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditUPSActivity"
+            android:exported="false" /> <!-- Akses & Akun -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccInfoActivity"
+            android:exported="false" /> <!-- Navigasi & Info -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KondisiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PenangananActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

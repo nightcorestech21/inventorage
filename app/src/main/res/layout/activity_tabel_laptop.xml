@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@mipmap/tampil_tabel_landscape">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/txtJudulTabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabel Data Laptop"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:paddingBottom="12dp" />
+
+    <!-- ScrollView Tabel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tabelLaptop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*"
+                android:layout_marginTop="8dp">
+
+                <!-- Header Kolom -->
+                <TableRow>
+                    <TextView style="@style/TableHeader" android:text="Nama PJ" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Jabatan" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Serial" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Merk" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="OS" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="RAM" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="NUP" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Kondisi" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Keterangan" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Aksi" android:textSize="11sp"/>
+                </TableRow>
+
+                <!-- Data baris dinamis dari Kotlin -->
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- Tombol Tambah Data -->
+    <Button
+        android:id="@+id/btnTambahLaptop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_200" />
+</LinearLayout>

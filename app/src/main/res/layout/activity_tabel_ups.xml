@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@mipmap/tampil_tabel_landscape">
+
+    <!-- Judul -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabel Data UPS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Scrollable Tabel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:id="@+id/tabelUPS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*"
+                android:background="#F8F8F8"
+                android:padding="4dp">
+
+                <!-- Header Kolom -->
+                <TableRow android:background="#CCCCCC">
+                    <TextView style="@style/TableHeader" android:text="Serial" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Merk" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Kondisi" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="NUP" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Seri PC" android:textSize="11sp"/>
+                    <TextView style="@style/TableHeader" android:text="Aksi" android:textSize="11sp"/>
+                </TableRow>
+
+                <!-- Baris Data Dinamis dari Kotlin -->
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- Tombol Tambah Data -->
+    <Button
+        android:id="@+id/btnTambahUPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_200" />
+
+</LinearLayout>

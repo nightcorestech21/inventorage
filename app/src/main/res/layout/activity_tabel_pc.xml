@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/tampil_tabel_landscape"
+    android:padding="16dp"
+    tools:context=".TabelPCActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/txtJudulTabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tabel Data PC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp" />
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:id="@+id/tabelPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:shrinkColumns="*"
+                android:background="#F8F8F8"
+                android:padding="4dp">
+
+                <!-- Header Kolom -->
+                <TableRow android:background="#CCCCCC">
+                    <TextView style="@style/TableHeader" android:text="Nama PJ" />
+                    <TextView style="@style/TableHeader" android:text="Jabatan" />
+                    <TextView style="@style/TableHeader" android:text="Serial" />
+                    <TextView style="@style/TableHeader" android:text="Merk" />
+                    <TextView style="@style/TableHeader" android:text="OS" />
+                    <TextView style="@style/TableHeader" android:text="RAM" />
+                    <TextView style="@style/TableHeader" android:text="NUP" />
+                    <TextView style="@style/TableHeader" android:text="Kondisi" />
+                    <TextView style="@style/TableHeader" android:text="Keterangan" />
+                    <TextView style="@style/TableHeader" android:text="Aksi" />
+                </TableRow>
+
+                <!-- Baris dinamis dari Kotlin -->
+
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnTambahPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/teal_200" />
+
+</LinearLayout>
